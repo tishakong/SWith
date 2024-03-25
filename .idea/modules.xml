@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/swith.iml" filepath="$PROJECT_DIR$/swith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice.iml" filepath="$PROJECT_DIR$/practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/practice_android.iml" filepath="$PROJECT_DIR$/android/practice_android.iml" />
     </modules>
   </component>
 </project>

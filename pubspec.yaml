@@ -1,4 +1,4 @@
-name: swith
+name: practice
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.2.4 <4.0.0'
+  sdk: '>=3.3.1 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,28 +30,47 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_native_splash: ^2.3.13   #스플래시화면을 위해 추가
+  shared_preferences: ^2.2.2  #사용자의 메일주소와 비밀번호를 저장하기 위해 사용할 플러그인
+  crypto: ^3.0.3  #암호 해싱을 제공하는 라이브러리
+  flutter_email_sender: ^6.0.2 #이메일 전송을 위한 패키지
+  firebase_auth: ^4.17.9  #Firebase의 인증 기능을 제공하는 플로그인
+  provider: ^6.1.2  #여러 페이지에서 인증 정보를 공유하기 위해 사용할 Provider 기능을 제공하는 플러그인
+  logger: ^2.2.0  #로그을 출력하기 위한 플러그인(옵션)
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.6
+  firebase_core: ^2.27.1
+  cloud_firestore: ^4.15.9
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons :
+  android : true
+  ios : true
+  image_path : "assets/images/potato.png"
+  adaptive_icon_background : "#191919"
+  adaptive_icon_foreground : "assets/places-adaptive.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
